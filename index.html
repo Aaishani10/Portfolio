@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+            color: #333333;
+            line-height: 1.7;
+        }
+
+        /* Navigation */
+
+        header {
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eeeeee;
+            background: white;
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: bold;
+            color: #7952a5;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #444;
+            margin-left: 22px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #7952a5;
+        }
+
+        /* Home */
+
+        #home {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 90px 12%;
+            gap: 40px;
+            background: #faf8fd;
+        }
+
+        .intro {
+            max-width: 550px;
+        }
+
+        .intro h3 {
+            color: #7952a5;
+            font-size: 19px;
+            font-weight: normal;
+        }
+
+        .intro h1 {
+            font-size: 48px;
+            margin: 10px 0;
+            color: #292333;
+        }
+
+        .intro p {
+            color: #666;
+            margin-top: 12px;
+        }
+
+        .profile {
+            width: 230px;
+            height: 230px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #e8dcf5;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 22px;
+            padding: 10px 23px;
+            background: #7952a5;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #604080;
+        }
+
+        /* Common Sections */
+
+        section:not(#home) {
+            padding: 65px 12%;
+        }
+
+        .heading {
+            font-size: 27px;
+            color: #7952a5;
+            margin-bottom: 25px;
+        }
+
+        .content {
+            max-width: 850px;
+            color: #666;
+        }
+
+        /* Education */
+
+        .education-box,
+        .project-box {
+            border-left: 3px solid #a98acb;
+            padding: 15px 22px;
+            background: #faf8fd;
+            margin-bottom: 18px;
+        }
+
+        .education-box h3,
+        .project-box h3 {
+            color: #393044;
+            margin-bottom: 5px;
+        }
+
+        /* Skills */
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skills-list span {
+            background: #f1eafa;
+            color: #69468f;
+            padding: 8px 18px;
+            border-radius: 4px;
+        }
+
+        /* Contact */
+
+        #contact {
+            background: #faf8fd;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #30283a;
+            color: white;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+
+        @media(max-width: 700px) {
+
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+
+            #home {
+                flex-direction: column-reverse;
+                text-align: center;
+                padding: 55px 8%;
+            }
+
+            .intro h1 {
+                font-size: 36px;
+            }
+
+            .profile {
+                width: 180px;
+                height: 180px;
+            }
+
+            section:not(#home) {
+                padding: 45px 8%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <header>
+        <div class="logo">Aaishani.</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- Home Section -->
+
+    <section id="home">
+
+        <div class="intro">
+
+            <h3>Hello, I'm</h3>
+
+            <h1>Aaishani</h1>
+
+            <h3>BCA Student</h3>
+
+            <p>
+                Welcome to my personal portfolio.
+                I am interested in computers, programming
+                and learning new technologies.
+                I enjoy exploring new things and improving
+                my technical skills.
+            </p>
+
+            <a href="#about" class="btn">About Me</a>
+
+        </div>
+
+        <!-- Replace this image with your own photo -->
+
+        <img src="photo.jpeg" alt="Aaishani's Profile Photo" class="profile">
+
+    </section>
+
+
+    <!-- About Section -->
+
+    <section id="about">
+
+        <h2 class="heading">About Me</h2>
+
+        <div class="content">
+
+            <p>
+                My name is Aaishani. I am a Bachelor of
+                Computer Applications (BCA) student.
+
+                I have an interest in computer science,
+                web development and programming.
+
+                I like learning new skills and understanding
+                how technology works. I am currently
+                improving my knowledge of web development
+                and programming languages.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Education Section -->
+
+    <section id="education">
+
+        <h2 class="heading">Education</h2>
+
+        <div class="education-box">
+
+            <h3>Bachelor of Computer Applications (BCA)</h3>
+
+            <p>Gopal Narayan Singh University</p>
+
+            <p>Jamuhar, Bihar</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills Section -->
+
+    <section id="skills">
+
+        <h2 class="heading">My Skills</h2>
+
+        <div class="skills-list">
+
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>C Programming</span>
+            <span>C++</span>
+            <span>MS Office</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects Section -->
+
+    <section id="projects">
+
+        <h2 class="heading">My Projects</h2>
+
+        <div class="project-box">
+
+            <h3>Personal Portfolio Website</h3>
+
+            <p>
+                A personal website created using
+                HTML, CSS and JavaScript.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+
+    <section id="contact">
+
+        <h2 class="heading">Contact Me</h2>
+
+        <div class="contact-info">
+
+            <p>
+                If you would like to connect with me,
+                feel free to get in touch.
+            </p>
+
+            <button class="btn" onclick="showContact()">
+                Say Hello
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+        <p>© 2026 Aaishani. All Rights Reserved.</p>
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script>
+
+        function showContact() {
+
+            alert("Thank you for visiting my portfolio!");
+
+        }
+
+    </script>
+
+</body>
+
+</html>
